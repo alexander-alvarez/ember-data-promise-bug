@@ -19,9 +19,8 @@ export default function() {
   this.get('/users/:id');
 
   this.get('/cars/:id', function({ cars }, {params: {id}}) {
-    // if id not equal to 2
     if (id === '2') {
-      return new Response(404);
+      return new Response(504);
     }
     return this.serialize(cars.find(id));
   });

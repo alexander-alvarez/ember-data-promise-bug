@@ -1,0 +1,8 @@
+{{#each model as |user i|}}
+  <p>Hello {{user.name}}, you drive a {{user.car.brand}}</p>
+{{/each}}
+
+
+{{#link-to 'alternate' tagName='button'}}
+  Next
+{{/link-to}}
